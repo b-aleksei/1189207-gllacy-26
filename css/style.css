@@ -11,15 +11,167 @@ html {
 
 body {
     background-color: #849d8f;
-    color: #323232;
+    /*color: #323232;*/
+    color: #fff;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
 }
 
+.blue {
+    outline: 1px solid blue;
+}
+.red {
+    outline: 1px solid red;
+}
+.green {
+    outline: 1px solid green;
+}
+.temp {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.temp > * {
+    outline: 1px dotted #f00;
+}
+.temp > * > *{
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
 .container {
+    position: relative;
     width: 1200px;
     padding: 0 27px;
+    margin: 0 auto;
+    outline: 1px dotted #f00;
+}
+
+.button {
+    color: inherit;
+    border-radius: 100Px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu {
+    display: flex;
+    padding-top: 9px;
+    align-items: center;
+}
+
+.menu__logo {
+    margin-right: 24px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.menu__list a,
+.menu__list button {
+    position: relative;
+}
+
+.menu__list a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.menu__item-1,
+.menu__item-2,
+.menu__item-3
+{
+    padding: 7px 28px 7px 0;
+    margin-bottom: 4px;
+}
+
+.menu__item-4,
+.menu__item-5,
+.menu__item-6
+{
+    padding: 0 0 0 10px;
+}
+
+.menu__item-3 {
+    margin-right: auto;
+}
+
+.menu__search {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.menu__search::before {
+content: url('../img/svg-gllacy/loupe.svg');
+position: absolute;
+top:8px;
+left:8px;
+}
+
+.menu__button {
+    padding: 7px 17px 7px 44px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.menu__item-6 a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.drop-menu {
+    display: none;
+    list-style: none;
+}
+
+.schedule {
+    text-align: right;
+}
+
+.schedule p {
+    margin: 0;
+}
+/*=======================================================*/
+.slider {
+    width: 1146px;
+    min-height: 528px;
+    position: relative;
+}
+
+.slider > div {
+    display: none;
+}
+
+.slider__backlight {
+    position: absolute;
+    top:-155px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: -10;
+}
+
+.slider__ice-cream {
+    position: absolute;
+    top:-45px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: -9;
+}
+
+.slider__text {
+    width: 670px;
     margin: 0 auto;
 }
