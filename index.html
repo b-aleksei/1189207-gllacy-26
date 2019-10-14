@@ -11,9 +11,9 @@
 </head>
 
 <body>
-<!--  <input type="radio" name="slider-1" id="slide-1">
-<input type="radio" name="slider-1" id="slide-2">
-<input type="radio" name="slider-1" id="slide-3">-->
+  <input class="slider-toggle-1 switch visually-hidden" type="radio" name="slider" id="slide-1" checked>
+  <input class="slider-toggle-2 switch visually-hidden" type="radio" name="slider" id="slide-2">
+  <input class="slider-toggle-3 switch visually-hidden" type="radio" name="slider" id="slide-3">
 <div class="container">
 	<header>
 		<div class="menu">
@@ -53,32 +53,36 @@
 	</header>
 	<main>
 		<div class="slider">
-			<div class="slider__slide-1" style="display:block;">
+			<div class="slider__buttons">
+				<label class="choose-slide-1 toggle" for="slide-1">Слайд 1</label>
+				<label class="choose-slide-2 toggle" for="slide-2">Слайд 2</label>
+				<label class="choose-slide-3 toggle" for="slide-3">Слайд 3</label>
+			</div>
+			<div class="slider__slide-1">
 				<img class="slider__backlight" src="img/slider/Backlight1.png" alt="фон" width="1045" height="881">
-				<img class="slider__ice-cream" src="img/slider/icecream1.png" alt="2 рожка мороженых" width="647"
-					 height="584">
+				<img class="slider__ice-cream" src="img/slider/icecream1.png" alt="2 рожка мороженых" width="647" height="584">
 				<div class="slider__text">
 					<p>Крем-брюле и пломбир
 						с малиновым джемом</p>
-					<button type="button" aria-label="купить 2 рожка">Давайте оба!</button>
+					<button class="button" type="button" aria-label="купить 2 рожка">Давайте оба!</button>
 				</div>
 			</div>
 			<div class="slider__slide-2">
 				<img class="slider__backlight" src="img/slider/Backlight2.png" alt="фон" width="1065" height="859">
 				<img class="slider__ice-cream" src="img/slider/icecream2.png" alt="2 рожка мороженых" width="644" height="582">
 				<div class="slider__text">
-					<p>Крем-брюле и пломбир
-						с малиновым джемом</p>
-					<button type="button" aria-label="купить 2 рожка">Давайте оба!</button>
+					<p>Шоколадный пломбир
+						и лимонный сорбет</p>
+					<button class="button" type="button" aria-label="купить 2 рожка">Давайте оба!</button>
 				</div>
 			</div>
 			<div class="slider__slide-3">
 				<img class="slider__backlight" src="img/slider/Backlight3.png" alt="фон" width="1079" height="854">
 				<img class="slider__ice-cream" src="img/slider/icecream3.png" alt="2 рожка мороженых" width="639" height="582">
 				<div class="slider__text">
-					<p>Крем-брюле и пломбир
-						с малиновым джемом</p>
-					<button type="button" aria-label="купить 2 рожка">Давайте оба!</button>
+					<p>Пломбир с помадкой
+						и клубничный щербет</p>
+					<button class="button" type="button" aria-label="купить 2 рожка">Давайте оба!</button>
 				</div>
 			</div>
 		</div>
