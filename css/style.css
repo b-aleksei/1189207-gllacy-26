@@ -10,13 +10,12 @@ html {
 }
 
 body {
-    /*background-color: #849d8f;*/
-    /*color: #323232;*/
     color: #fff;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 .visually-hidden {
@@ -61,12 +60,13 @@ body {
 .container::before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 300%;
     height: 100%;
     top:0;
-    left:0;
+    left:-100%;
     background-color: #849d8f;
     z-index: -11;
+
 }
 
 .button {
@@ -355,7 +355,7 @@ left:15px;
 }
 
 .red-button {
-    color: inherit;
+    color: #fff;
     border-radius: 100Px;
     border: none;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -414,8 +414,10 @@ left:15px;
 /*========================================================================*/
 .advantages {
     margin-top: 37px;
+    margin-bottom: 40px;
     padding: 5px 21px 25px;
     border-radius: 13px;
+    background-color: #f1e6ce;
     background-image: url("../img/waffle_pattern.png") ;
     color: #323232;
 }
@@ -469,4 +471,200 @@ left:15px;
     position: absolute;
     top:-13px;
     left:12px;
+}
+/*========================================================*/
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    color: #323232;
+    justify-content: space-between;
+}
+
+.news,
+.subscribe
+{
+    position: relative;
+    width: 560px;
+    min-height: 220px;
+}
+
+.news p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 23px 0 4px 0;
+    
+}
+
+.news {
+    padding: 0 250px 20px 19px;
+    background: #f8f7f4 url(../img/Strawberry-bg.png) no-repeat;
+    border-radius: 13px;
+}
+
+.news a {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #323232;
+    text-decoration: none;
+    border-bottom: 2px solid #323232;
+}
+
+.subscribe {
+    background-color: #f8f7f4;
+    border-radius: 13px;
+    padding: 18px 27px 20px 27px;
+}
+
+.subscribe__email {
+    width: 368px;
+    height: 44px;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.subscribe__email::placeholder {
+    padding-left: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999999;
+}
+
+.subscribe button {
+    margin: 20px 0 0 8px;
+    padding: 10px 17px;
+}
+
+.map {
+    width: 100%;
+    min-height: 430px;
+    position: relative;
+    margin-top: 40px;
+    background-image: url("../img/Layer_3.png");
+}
+
+.map iframe {
+    position: absolute;
+    top:0;
+    left:-27px;
+    z-index: 2;
+}
+
+.address {
+    position: absolute;
+    top:59px;
+    right:0;
+    width: 302px;
+    background-color: #ffffff;
+    padding: 32px 25px;
+    z-index: 3;
+}
+
+.address p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.address p:first-child {
+    padding-right: 100px;
+}
+
+.address p:nth-child(3) {
+    margin: 19px 0 5px 0;
+}
+
+.address .address_bold-text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.address .red-button {
+    margin-top: 26px;
+    padding: 9px 27px;
+}
+/*================ footer ==================================*/
+.footer {
+    display: flex;
+    padding: 17px 0 22px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    margin: 17px 0 0 4px;
+    flex-shrink: 0;
+}
+
+.social-icon img {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.inform {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.inform li {
+    min-width: 259px;
+}
+
+.inform li:nth-child(odd) {
+    text-align: right;
+    margin-right: 31px;
+}
+
+.inform li:nth-child(3) {
+    padding-right: 13px;
+}
+
+.inform a {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.inform__suppliers {
+    position: relative;
+}
+
+.inform__suppliers::before {
+  content: url("../img/svg-gllacy/heart.svg");
+  position: absolute;
+  top:2px;
+  left:-23px;
+}
+
+.copyright {
+    width: 190px;
+    flex-shrink: 0;
+    margin-left: 41px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
 }
