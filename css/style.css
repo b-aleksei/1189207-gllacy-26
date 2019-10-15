@@ -32,7 +32,6 @@ body {
     overflow: hidden;
 }
 
-
 .blue {
     outline: 1px solid blue;
 }
@@ -43,13 +42,13 @@ body {
     outline: 1px solid green;
 }
 .temp {
-    background-color: rgba(255, 0, 0, 0.3);
+    background-color: rgba(255, 0, 0, 0.1);
 }
 .temp > * {
     outline: 1px dotted #f00;
 }
 .temp > * > *{
-    background-color: rgba(0, 255, 0, 0.3);
+    background-color: rgba(0, 255, 0, 0.1);
 }
 
 .container {
@@ -57,7 +56,6 @@ body {
     width: 1200px;
     padding: 0 27px;
     margin: 0 auto;
-    outline: 1px dotted #f00;
 }
 
 .container::before {
@@ -109,6 +107,10 @@ body {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
+}
+
+.menu__list a:not(.menu__cart) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .menu__item-1,
@@ -180,7 +182,7 @@ left:17px;
 content: url("../img/svg-gllacy/basket.svg");
 position: absolute;
 top:5px;
-left:17px;
+left:15px;
 }
 
 .schedule {
@@ -201,7 +203,7 @@ left:17px;
     line-height: 24px;
     padding-top: 4px;
 }
-/*=======================================================*/
+/*========================= slider ==============================*/
 .slider {
     width: 1146px;
     min-height: 528px;
@@ -308,4 +310,163 @@ left:17px;
 
 .slider-toggle-3:checked ~ .container::before {
     background-color: #9d8b84;
+}
+/*================================================================*/
+.hot-offer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+
+.hot-offer section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 560px;
+    min-height: 229px;
+}
+
+.hot-offer__bg {
+    width: 100%;
+    position: absolute;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.hot-offer__title {
+    margin: 17px 18px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41px;
+}
+
+.hot-offer__text {
+    margin: 0 18px auto 18px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.hot-offer__oder {
+    align-self: flex-end;
+    margin: 22px 21px;
+    padding: 10px 22px;
+    text-decoration: none;
+}
+
+.red-button {
+    color: inherit;
+    border-radius: 100Px;
+    border: none;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+/*============================== hits =======================================*/
+.our-hits {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-hits__item {
+    position: relative;
+    width: 267px;
+    text-align: center;
+}
+
+.picture {
+    min-height: 267px;
+    margin-bottom: 8px;
+}
+
+.hit::after {
+  content: url("../img/svg-gllacy/hit.svg");
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.our-hits__price {
+    position: absolute;
+    top:164px;
+    left:-1px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.our-hits__currency {
+    margin-left: 3px;
+}
+
+.our-hits__weight {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.our-hits__name {
+    display: inline;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/*========================================================================*/
+.advantages {
+    margin-top: 37px;
+    padding: 5px 21px 25px;
+    border-radius: 13px;
+    background-image: url("../img/waffle_pattern.png") ;
+    color: #323232;
+}
+
+.advantages__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.advantages__text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantages__text p {
+    position: relative;
+    width: 50%;
+    margin: 21px 0 0 0;
+    padding: 0 0 0 71px;
+}
+
+.advantages__text p:nth-child(odd) {
+    padding-left: 55px;
+}
+
+.advantages__item-1::before {
+  content: url("../img/svg-gllacy/ice-cream.svg");
+  position: absolute;
+  top:-13px;
+  left:0;
+}
+
+.advantages__item-2::before {
+    content: url("../img/svg-gllacy/cow.svg");
+    position: absolute;
+    top:-13px;
+    left:12px;
+}
+
+.advantages__item-3::before {
+    content: url("../img/svg-gllacy/eco.svg");
+    position: absolute;
+    top:-13px;
+    left:0;
+}
+
+.advantages__item-4::before {
+    content: url("../img/svg-gllacy/thermometer.svg");
+    position: absolute;
+    top:-13px;
+    left:12px;
 }
