@@ -311,6 +311,13 @@ left:15px;
 .slider-toggle-3:checked ~ .container::before {
     background-color: #9d8b84;
 }
+
+.slider-toggle-1:focus ~ .container .choose-slide-1::before,
+.slider-toggle-2:focus ~ .container .choose-slide-2::before,
+.slider-toggle-3:focus ~ .container .choose-slide-3::before
+{
+    box-shadow: 0 0 0 4px rgba(99, 122, 209, 0.5);
+}
 /*================================================================*/
 .hot-offer {
     display: flex;
