@@ -78,7 +78,7 @@ body {
 
 .menu {
     display: flex;
-    padding-top: 9px;
+    padding-top: 10px;
     align-items: center;
 }
 
@@ -88,7 +88,7 @@ body {
 
 .menu__list {
     display: flex;
-    margin: 13px 0 13px 0;
+    margin: 13px 0 11px 0;
     padding: 0;
     align-items: center;
     list-style: none;
@@ -117,8 +117,7 @@ body {
 .menu__item-2,
 .menu__item-3
 {
-    padding: 7px 28px 7px 0;
-    margin-bottom: 4px;
+    padding: 5px 28px 11px 0;
 }
 
 .menu__item-4,
@@ -129,9 +128,9 @@ body {
 }
 /*================= drop menu======================*/
 .drop-menu {
-    /*display: none;*/
+    display: none;
     position: absolute;
-    bottom: -175px;
+    bottom: -168px;
     left:-20px;
     min-width: 142px;
     padding:0;
@@ -142,8 +141,12 @@ body {
     z-index: 5;
 }
 
-.drop-menu li {
-    border-radius: 5px;
+.drop-menu__link-1 {
+    border-radius: 5px 5px 0 0 ;
+}
+
+.drop-menu__link-5 {
+    border-radius: 0 0 5px 5px;
 }
 
 .drop-menu a {
@@ -170,12 +173,20 @@ body {
 }
 
 .drop-menu li:hover,
-.drop-menu a:focus
+.drop-menu a:focus,
+.selected
 {
     background-color: #fbded8;
 }
+
+.menu__item-1:hover .drop-menu,
+.drop-menu:hover {
+    display: block;
+}
 /*======================================================*/
-.menu__item-1 {
+.menu__item-1,
+.menu__item-4
+{
     position: relative;
 }
 
@@ -188,10 +199,18 @@ body {
     min-width: 120px;
 }
 
+.menu__search_input {
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
 .menu__search {
     width: 33px;
     height: 33px;
     border-radius: 50%;
+    position: relative;
 }
 
 .menu__search::before {
@@ -205,7 +224,7 @@ left:8px;
 .menu__cart
 {
     padding: 7px 17px 7px 44px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
@@ -252,7 +271,7 @@ left:15px;
 /*========================= slider ==============================*/
 .slider {
     width: 1146px;
-    min-height: 528px;
+    min-height: 529px;
     position: relative;
 }
 
@@ -368,7 +387,7 @@ left:15px;
 .hot-offer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .hot-offer section {
@@ -466,7 +485,7 @@ left:15px;
 }
 /*========================================================================*/
 .advantages {
-    margin-top: 37px;
+    margin-top: 38px;
     margin-bottom: 40px;
     padding: 5px 21px 25px;
     border-radius: 13px;

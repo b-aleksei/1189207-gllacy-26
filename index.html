@@ -22,11 +22,11 @@
 				<li class="menu__item-1">
 					<a href="" class="menu__sublist underline" type="button">Каталог</a>
 					<ul class="drop-menu">
-						<li class="drop-menu__link-1"><a href="">Новинки</a></li>
-						<li class="drop-menu__link-2"><a href="">Сливочное</a></li>
-						<li class="drop-menu__link-3"><a href="" onfocus="this">Щербеты</a></li>
-						<li class="drop-menu__link-4"><a href="">Фруктовый лед</a></li>
-						<li class="drop-menu__link-5"><a href="">Мелорин</a></li>
+						<li class="drop-menu__link-1"><a href="#">Новинки</a></li>
+						<li class="drop-menu__link-2"><a href="catalog.html">Сливочное</a></li>
+						<li class="drop-menu__link-3 selected" ><a href="#">Щербеты</a></li>
+						<li class="drop-menu__link-4"><a href="#">Фруктовый лед</a></li>
+						<li class="drop-menu__link-5"><a href="#">Мелорин</a></li>
 					</ul>
 				</li>
 				<li class="menu__item-2">
@@ -36,7 +36,13 @@
 					<a class="underline" href="">О Компании</a>
 				</li>
 				<li class="menu__item-4">
-					<button class="button menu__search" type="button" aria-label="поиск по сайту"></button>
+					<form action="" method="post">
+						<div class="menu__search_input">
+						<input type="search" name="search" id="search">
+							<label for="search"></label>
+						</div>
+					<button class="button menu__search" type="submit" aria-label="поиск по сайту" formtarget="_blank"></button>
+					</form>
 				</li>
 				<li class="menu__item-5">
 					<button class="button menu__enter" type="button" aria-label="вход на сайт">Вход</button>
