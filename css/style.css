@@ -248,7 +248,7 @@ left:8px;
 }
 
 .menu__search_input {
-    /*display: none;*/
+    display: none;
     position: absolute;
     bottom:-82px;
     left:-298px;
@@ -286,7 +286,7 @@ left:8px;
 /*======== enter ====================*/
 
 .enter {
-    /*display: none;*/
+    display: none;
     position: absolute;
     top:35px;
     left:-173px;
