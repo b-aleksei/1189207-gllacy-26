@@ -109,7 +109,7 @@ body {
     font-weight: 400;
 }
 
-.menu__list a:not(.menu__cart) {
+.underline {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -127,10 +127,56 @@ body {
 {
     padding: 0 0 0 10px;
 }
-
+/*================= drop menu======================*/
 .drop-menu {
-    display: none;
+    /*display: none;*/
+    position: absolute;
+    bottom: -175px;
+    left:-20px;
+    min-width: 142px;
+    padding:0;
     list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+    z-index: 5;
+}
+
+.drop-menu li {
+    border-radius: 5px;
+}
+
+.drop-menu a {
+    padding: 8px 0 7px 19px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #323232;
+}
+
+.drop-menu__link-1 a {
+    padding: 11px 0 10px 14px;
+    margin:0 9px 0 5px;
+    border-bottom: 2px solid #d1d0ce;
+    font-weight: 700;
+}
+
+.drop-menu__link-2 a {
+    padding-top: 11px;
+}
+
+.drop-menu__link-5 a {
+    padding-bottom: 12px;
+}
+
+.drop-menu li:hover,
+.drop-menu a:focus
+{
+    background-color: #fbded8;
+}
+/*======================================================*/
+.menu__item-1 {
+    position: relative;
 }
 
 .menu__item-2 {
