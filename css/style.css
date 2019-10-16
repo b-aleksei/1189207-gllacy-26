@@ -78,7 +78,7 @@ body {
 
 .menu {
     display: flex;
-    padding-top: 10px;
+    padding-top: 13px;
     align-items: center;
 }
 
@@ -128,9 +128,9 @@ body {
 }
 /*================= drop menu======================*/
 .drop-menu {
-    display: none;
+    /*display: none;*/
     position: absolute;
-    bottom: -168px;
+    bottom: -171px;
     left:-20px;
     min-width: 142px;
     padding:0;
@@ -139,10 +139,6 @@ body {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
     background-color: #f8f7f4;
     z-index: 5;
-}
-
-.drop-menu__link-1 {
-    border-radius: 5px 5px 0 0 ;
 }
 
 .drop-menu__link-5 {
@@ -157,11 +153,14 @@ body {
     color: #323232;
 }
 
-.drop-menu__link-1 a {
+.drop-menu__link-1 {
     padding: 11px 0 10px 14px;
     margin:0 9px 0 5px;
     border-bottom: 2px solid #d1d0ce;
+    font-size: 14px;
     font-weight: 700;
+    line-height: 16px;
+    color: #323232;
 }
 
 .drop-menu__link-2 a {
@@ -172,8 +171,8 @@ body {
     padding-bottom: 12px;
 }
 
-.drop-menu li:hover,
-.drop-menu a:focus,
+.drop-menu li:not(:first-child):hover,
+.drop-menu a:not(:first-child):focus,
 .selected
 {
     background-color: #fbded8;
@@ -320,7 +319,7 @@ left:15px;
 
 .slider__ice-cream {
     position: absolute;
-    top:-35px;
+    top:-34px;
     left:50%;
     transform: translateX(-50%);
     z-index: -9;
