@@ -47,6 +47,21 @@
 				</li>
 				<li class="menu__item-5">
 					<button class="button menu__enter" type="button" aria-label="вход на сайт">Вход</button>
+					<div class="enter">
+						<form action="" method="post">
+							<input type="email" name="login" id="login" placeholder="email@example.com">
+							<label class="visually-hidden" for="login">Введите ваш емаил</label>
+							<input type="password" name="password" id="password" placeholder="••••••••">
+							<label class="visually-hidden" for="password">Введите ваш парооль</label>
+							<div class="enter__buttons">
+							<button class="red-button" type="submit">Войти</button>
+								<div>
+									<a href="">Забыли пароль?</a>
+									<a href="">Новая регистрация</a>
+								</div>
+							</div>
+						</form>
+					</div>
 				</li>
 				<li class="menu__item-6">
 					<a class="button menu__cart" href="#" aria-label="Козина">Пусто</a>
@@ -192,8 +207,8 @@
 			</div>
 			<div class="map">
 				<iframe src="https://yandex.ru/map-widget/v1/-/CGeoJF2t" width="1200" height="430" style="border:1px"
-						allowfullscreen="true"></iframe>
-				<div class="address red">
+						allow="fullscreen"></iframe>
+				<div class="address">
 					<p>Адрес главного офиса и офлайн-магазина:</p>
 					<p class="address_bold-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
 					<p>Для заказов по телефону:</p>
@@ -247,7 +262,22 @@
 	</footer>
 
 </div>
+<div class="feedback">
+	<section class="feedback__body">
+		<h2>Мы обязательно вам ответим!</h2>
+		<form action="" method="post">
+			<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+			<label class="visually-hidden" for="name">Введите ваше имя</label>
+			<input type="email" name="my-email" id="my-email" placeholder="email@example.com">
+			<label class="visually-hidden" for="my-email">Введите ваш емайл</label>
+			<textarea name="comment" id="comment" cols="48" rows="7" placeholder="В свободной форме"></textarea>
+			<label class="visually-hidden" for="comment">Введите ваш комментарий</label>
+			<button class="red-button" type="submit">Отправить</button>
+		</form>
+		<button class="feedback__close" type="button">Закрыть</button>
+	</section>
 
+</div>
 </body>
 
 </html>
