@@ -669,11 +669,17 @@ left:15px;
 }
 
 .news,
-.subscribe
+.subscribe-border
 {
     position: relative;
     width: 560px;
     min-height: 220px;
+}
+
+.subscribe-border {
+    padding: 5px;
+    border-radius: 13px;
+    background-image:  repeating-linear-gradient(135deg, white 0, white 10px, #92cdff 10px, #92cdff 20px, white 20px, white 30px, #fe9e90 30px, #fe9e90 40px );
 }
 
 .news p {
@@ -681,7 +687,6 @@ left:15px;
     font-weight: 500;
     line-height: 22px;
     margin: 23px 0 4px 0;
-    
 }
 
 .news {
@@ -700,9 +705,10 @@ left:15px;
 }
 
 .subscribe {
+    min-height: 210px;
+    padding: 13px 22px 15px 22px;
     background-color: #f8f7f4;
     border-radius: 13px;
-    padding: 18px 27px 20px 27px;
 }
 
 .subscribe__email {
