@@ -211,8 +211,8 @@ body {
     background-color: #fbded8;
 }
 
-.menu__sublist:hover ~ .drop-menu,
-.menu__sublist:focus ~ .drop-menu,
+.menu__item-1:hover .drop-menu,
+    .menu__sublist:focus + .drop-menu,
 .drop-menu:hover {
     display: block;
 }
@@ -260,9 +260,8 @@ left:8px;
     background-color: #f8f7f4;
 }
 
-.menu__search:hover ~ div,
-.menu__search:focus ~ div,
-/*.label-search:focus + div,*/
+.menu__item-4:hover div,
+.menu__search:focus + div,
 .menu__search_input:hover,
 .menu__search_input:focus
 {
@@ -329,6 +328,12 @@ left:8px;
     font-size: 13px;
     font-weight: 400;
     line-height: 22px;
+}
+
+.menu__item-5:hover .enter,
+.menu__enter:focus + .enter,
+.enter:hover {
+    display: block;
 }
 /*==================================*/
 .menu__enter,
