@@ -978,6 +978,10 @@ footer ul {
     list-style: none;
 }
 
+.nav__menu_path {
+    margin-top: -20px;
+}
+
 .nav__link {
     display: block;
     text-decoration: none;
@@ -987,14 +991,21 @@ footer ul {
 .nav__link_main,
 .nav__link_catalog
 {
-    padding-right: 10px;
+    padding-right: 7px;
 }
 
 .nav__link_main::after,
 .nav__link_catalog::after
 {
     content: '»';
-    padding-left: 10px;
+    padding-left: 7px;
+}
+
+.sort__bg {
+    width: 100%;
+    height: 36px;
+    border-radius: 100Px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sort__form {
@@ -1002,7 +1013,174 @@ footer ul {
     flex-wrap: wrap;
 }
 
-.sort__item-1 label,
-.sort__item-2 label{
-    display: block;
+.sort__form > div {
+    margin: 0 14px 16px 0;
 }
+
+.sort__item-1 label,
+.sort__cost-range,
+.sort__item-3 h4,
+.sort__item-4 h4
+{
+    display: block;
+    margin: 0 0 5px 17px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.nav__menu_path a {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.sort__title {
+    margin: 5px 0 27px 0;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41px;
+}
+
+.sort__item-1 {
+    width: 194px;
+    position: relative;
+}
+
+.sort__select {
+    padding-left: 16px;
+    color: inherit;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.sort__item-1::after {
+    content: '';
+    position: absolute;
+    top: 34px;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 11px 6px 0 6px;
+    border-color: #fff transparent transparent transparent;
+    z-index: 1;
+}
+
+.sort__select::-ms-expand {
+    display: none;
+}
+
+.sort__select option {
+    background-color: #aabcb2;
+}
+
+.sort__item-2 {
+    width: 220px;
+}
+
+.sort__cost-range,
+.sort__richness label,
+.sort__powder label
+{
+    position: relative;
+}
+
+.sort__double-range {
+    display: block;
+    position: relative;
+}
+
+.sort__double-range::before {
+    content: '';
+    position: absolute;
+    top:16px;
+    left:22px;
+    width: 176px;
+    height: 4px;
+    background-color: rgba(248, 247, 244, 0.5);
+}
+
+.sort__cost-range::before {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left:27px;
+    width: 100px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.sort__double-range::after,
+.sort__cost-range::after
+{
+    content: '';
+    position: absolute;
+    top:16px;
+    left:43px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ababab;
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 1);
+    z-index: 1;
+}
+
+.sort__cost-range::after  {
+    top: 37px;
+    left:125px;
+}
+
+.sort__richness,
+.sort__powder {
+    padding: 8px 17px 0 0;
+}
+
+.sort__powder {
+    padding-right: 20px;
+}
+
+.sort__richness label {
+    padding-left: 46px;
+}
+
+.sort__powder .sort__label-padding {
+     padding-left: 51px;
+ }
+
+.sort__richness label::before {
+    content: '';
+    position: absolute;
+    top:-2px;
+    left:15px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.sort__powder label::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:17px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 2px solid #fff;
+}
+
+.sort__powder label {
+    padding: 0 0 0 48px;
+}
+
+.sort__accept {
+    width: 144px;
+    height: 37px;
+    margin-top: 21px;
+    border: 2px solid #ffffff;
+}
+
+

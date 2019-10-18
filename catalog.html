@@ -71,7 +71,7 @@
 		</div>
 	</header>
 	<main>
-		<ul class="nav__menu">
+		<ul class="nav__menu nav__menu_path">
 			<li>
 				<a class="nav__link nav__link_main underline" href="index.html">Главная</a>
 			</li>
@@ -84,49 +84,52 @@
 		</ul>
 
 		<section class="sort">
-			<h1>Сливочное мороженое</h1>
+			<h1 class="sort__title">Сливочное мороженое</h1>
 			<h3 class="visually-hidden">Сортировка:</h3>
 			<form class="sort__form" action="" method="post">
 				<div class="sort__item-1">
 					<label for="sort">Сортировка:</label>
-					<select name="" id="sort">
+					<select class="sort__select sort__bg" name="" id="sort">
 						<option selected>по популярности</option>
 						<option>по цене</option>
 						<option>по калорийности</option>
 					</select>
 				</div>
 				<div class="sort__item-2">
-					<label for="range-1">Цена: 100 руб. – 500 руб.</label>
-					<input type="range" name="" id="range-1">
-					<label class="visually-hidden" for="range-2"></label>
-					<input type="range" name="" id="range-2">
+					<label class="sort__cost-range" for="range-1">Цена: 100 руб. – 500 руб.</label>
+					<input class="visually-hidden" type="range" name="" id="range-1">
+					<label class="sort__double-range sort__bg" for="range-2"></label>
+					<input class="visually-hidden" type="range" name="" id="range-2">
 				</div>
 				<div class="sort__item-3">
 					<h4>Жирность:</h4>
-					<input type="radio" name="radio" id="radio-1">
-					<label for="radio-1">0%</label>
-					<input type="radio" name="radio" id="radio-2">
-					<label for="radio-2">до 10%</label>
-					<input type="radio" name="radio" id="radio-3">
-					<label for="radio-3">до 30%</label>
-					<input type="radio" name="radio" id="radio-4">
-					<label for="radio-4">выше 30%</label>
+					<div class="sort__richness sort__bg">
+						<input class="visually-hidden" type="radio" name="radio" id="radio-1">
+						<label  for="radio-1">0%</label>
+						<input class="visually-hidden" type="radio" name="radio" id="radio-2">
+						<label for="radio-2">до 10%</label>
+						<input class="visually-hidden" type="radio" name="radio" id="radio-3">
+						<label for="radio-3">до 30%</label>
+						<input class="visually-hidden" type="radio" name="radio" id="radio-4">
+						<label for="radio-4">выше 30%</label>
+					</div>
 				</div>
 				<div class="sort__item-4">
 					<h4>Наполнители:</h4>
-					<input type="checkbox" name="chocolate" id="chocolate">
-					<label for="chocolate"></label>
-					<input type="checkbox" name="sugar" id="sugar">
-					<label for="sugar"></label>
-					<input type="checkbox" name="fruit" id="fruit">
-					<label for="fruit"></label>
-					<input type="checkbox" name="syrup" id="syrup">
-					<label for="syrup"></label>
-					<input type="checkbox" name="jam" id="jam">
-					<label for="jam"></label>
-
-					<button type="submit">Применить</button>
+					<div class="sort__powder sort__bg">
+						<input class="visually-hidden" type="checkbox" name="chocolate" id="chocolate">
+						<label for="chocolate">шоколадные</label>
+						<input class="visually-hidden" type="checkbox" name="sugar" id="sugar">
+						<label for="sugar">сахарные присыпки</label>
+						<input class="visually-hidden" type="checkbox" name="fruit" id="fruit">
+						<label class="sort__label-padding" for="fruit">фрукты</label>
+						<input class="visually-hidden" type="checkbox" name="syrup" id="syrup">
+						<label class="sort__label-padding" for="syrup">сиропы</label>
+						<input class="visually-hidden" type="checkbox" name="jam" id="jam">
+						<label class="sort__label-padding" for="jam">джемы</label>
+					</div>
 				</div>
+					<button class="sort__accept button" type="submit">Применить</button>
 			</form>
 			<div class="assortment">
 				<div class="assortment__item">
