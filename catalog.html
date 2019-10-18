@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
+		  rel="stylesheet">
+	<link rel="stylesheet" href="./css/normalize-min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>HTML Academy: Глейси</title>
+</head>
+
+<body>
+<div class="container">
+	<header>
+		<div class="menu">
+			<img class="menu__logo" src="./img/Logo.png" alt="logo" width="154" height="64">
+			<ul class="menu__list">
+				<li class="menu__item-1">
+					<a href="#" class="menu__sublist underline" type="button">Каталог</a>
+					<ul class="drop-menu">
+						<li class="drop-menu__link-1">Новинки</li>
+						<li class="drop-menu__link-2"><a href="catalog.html">Сливочное</a></li>
+						<li class="drop-menu__link-3 selected"><a href="#">Щербеты</a></li>
+						<li class="drop-menu__link-4"><a href="#">Фруктовый лед</a></li>
+						<li class="drop-menu__link-5"><a href="#">Мелорин</a></li>
+					</ul>
+				</li>
+				<li class="menu__item-2">
+					<a class="underline" href="#">Доставка и оплата</a>
+				</li>
+				<li class="menu__item-3">
+					<a class="underline" href="#">О Компании</a>
+				</li>
+				<li class="menu__item-4">
+					<form action="" method="get">
+						<button class="button menu__search" type="submit" aria-label="поиск по сайту"
+								formtarget="_blank"></button>
+						<div class="menu__search_input">
+							<label class="label-search visually-hidden" for="search">Поиск по сайту</label>
+							<input type="search" name="search" id="search" placeholder="Крем-брюле" autofocus>
+						</div>
+					</form>
+				</li>
+				<li class="menu__item-5">
+					<button class="button menu__enter" type="button" aria-label="вход на сайт">Вход</button>
+					<div class="enter">
+						<form action="" method="post">
+							<input type="email" name="login" id="login" placeholder="email@example.com">
+							<label class="visually-hidden" for="login">Введите ваш емаил</label>
+							<input type="password" name="password" id="password" placeholder="••••••••">
+							<label class="visually-hidden" for="password">Введите ваш парооль</label>
+							<div class="enter__buttons">
+								<button class="red-button" type="submit">Войти</button>
+								<div>
+									<a href="">Забыли пароль?</a>
+									<a href="">Новая регистрация</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</li>
+				<li class="menu__item-6">
+					<a class="button menu__cart" href="#" aria-label="Козина">Пусто</a>
+				</li>
+			</ul>
+		</div>
+		<div class="schedule">
+			<p>С 10 до 20, ежедневно</p>
+			<p>8 812 450-25-25</p>
+		</div>
+	</header>
+	<main>
+		<ul class="nav__menu">
+			<li>
+				<a class="nav__link nav__link_main underline" href="index.html">Главная</a>
+			</li>
+			<li>
+				<a class="nav__link nav__link_catalog underline" href="">Каталог</a>
+			</li>
+			<li>
+				<a class="nav__link underline" href="">Сливочное</a>
+			</li>
+		</ul>
+
+		<section class="sort">
+			<h1>Сливочное мороженое</h1>
+			<h3 class="visually-hidden">Сортировка:</h3>
+			<form class="sort__form" action="" method="post">
+				<div class="sort__item-1">
+					<label for="sort">Сортировка:</label>
+					<select name="" id="sort">
+						<option selected>по популярности</option>
+						<option>по цене</option>
+						<option>по калорийности</option>
+					</select>
+				</div>
+				<div class="sort__item-2">
+					<label for="range-1">Цена: 100 руб. – 500 руб.</label>
+					<input type="range" name="" id="range-1">
+					<label class="visually-hidden" for="range-2"></label>
+					<input type="range" name="" id="range-2">
+				</div>
+				<div class="sort__item-3">
+					<h4>Жирность:</h4>
+					<input type="radio" name="radio" id="radio-1">
+					<label for="radio-1">0%</label>
+					<input type="radio" name="radio" id="radio-2">
+					<label for="radio-2">до 10%</label>
+					<input type="radio" name="radio" id="radio-3">
+					<label for="radio-3">до 30%</label>
+					<input type="radio" name="radio" id="radio-4">
+					<label for="radio-4">выше 30%</label>
+				</div>
+				<div class="sort__item-4">
+					<h4>Наполнители:</h4>
+					<input type="checkbox" name="chocolate" id="chocolate">
+					<label for="chocolate"></label>
+					<input type="checkbox" name="sugar" id="sugar">
+					<label for="sugar"></label>
+					<input type="checkbox" name="fruit" id="fruit">
+					<label for="fruit"></label>
+					<input type="checkbox" name="syrup" id="syrup">
+					<label for="syrup"></label>
+					<input type="checkbox" name="jam" id="jam">
+					<label for="jam"></label>
+
+					<button type="submit">Применить</button>
+				</div>
+			</form>
+			<div class="assortment">
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/1.png" width="267" height="267"
+							 alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">310<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">380<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочно-кофейное с кусочками шоколада</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/3.png" width="267" height="267"
+							 alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">355<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочно-клубничное с присыпкой из белого шоколада</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/4.png" width="267" height="267"
+							 alt="Сливочное крем-брюле с карамельной подливкой">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">415<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочное крем-брюле с карамельной подливкой</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/5.png" width="267" height="267"
+							 alt="Сливочное с брусничным джемом">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">325<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочное с брусничным джемом</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/6.png" width="267" height="267"
+							 alt="Сливочно-черничное с цельными ягодами черники">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">410<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочно-черничное с цельными ягодами черники</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/7.png" width="267" height="267"
+							 alt="Сливочно-лимонное с карамельной присыпкой">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">375<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочно-лимонное с карамельной присыпкой</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/8.png" width="267" height="267"
+							 alt="Сливочное с шоколадной стружкой">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">320<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочное с шоколадной стружкой</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/9.png" width="267" height="267"
+							 alt="Сливочно-ванильное с кусочками шоколада">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">440<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочно-ванильное с кусочками шоколада</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/10.png" width="267" height="267"
+							 alt="Сливочное с ментоловым сиропом">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">435<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочное с ментоловым сиропом</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/11.png" width="267" height="267"
+							 alt="Сливочное с кусочками черного шоколада">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">355<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочное с кусочками черного шоколада</p>
+				</div>
+				<div class="assortment__item">
+					<div class="picture">
+						<img src="img/12.png" width="267" height="267"
+							 alt="Сливочное с мятным сиропом">
+					</div>
+					<!--					<span class="hit"></span>-->
+					<p class="assortment__price">420<span class="assortment__currency">₽</span><span
+						class="assortment__weight">/кг</span>
+					</p>
+					<p class="assortment__name">Сливочное с мятным сиропом</p>
+				</div>
+
+			</div>
+			<ul class="nav-pages">
+				<li>
+					<a href=""><</a>
+				</li>
+				<li>
+					<a href="">1</a>
+				</li>
+				<li>
+					<a href="">2</a>
+				</li>
+				<li>
+					<a href="">3</a>
+				</li>
+				<li>
+					<a href="">4</a>
+				</li>
+				<li>
+					<a href="">5</a>
+				</li>
+				<li>
+					<a href="">></a>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<ul class="social-icon">
+			<li>
+				<a href="#"><img src="img/svg-gllacy/twitter.svg" width="32" height="32" alt="мы в твиттере"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/svg-gllacy/instagram.svg" width="32" height="32" alt="мы в инстаграмм"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/svg-gllacy/fb.svg" width="32" height="32" alt="мы на фейсбуке"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/svg-gllacy/vk.svg" width="32" height="32" alt="мы в контакте"></a>
+			</li>
+		</ul>
+		<ul class="inform">
+			<li>
+				<a class="inform__suppliers" href="#">Для поставщиков</a>
+			</li>
+			<li>
+				<a href="#">Наши документы</a>
+			</li>
+			<li>
+				<a href="#">О производстве</a>
+			</li>
+			<li>
+				<a href="#">Экологические стандарты</a>
+			</li>
+		</ul>
+		<ul class="copyright">
+			<li>
+				<a href="https://htmlacademy.ru/intensive/htmlcss">
+					<img src="img/svg-gllacy/logo-htmlacademy.svg" alt="HTML-Academy" width="108" height="39">
+				</a>
+			</li>
+			<li>
+				<p>Сделано в <span>HTML Academy</span> © 2019</p>
+			</li>
+		</ul>
+	</footer>
+</div>
+</body>
+
+</html>

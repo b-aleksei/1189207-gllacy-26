@@ -150,7 +150,7 @@ body {
 .menu__item-2,
 .menu__item-3
 {
-    padding: 7px 3px 11px 0;
+    padding: 5px 3px 11px 0;
 }
 
 .menu__item-4,
@@ -163,7 +163,7 @@ body {
 .drop-menu {
     display: none;
     position: absolute;
-    bottom: -165px;
+    bottom: -167px;
     left:-6px;
     min-width: 142px;
     padding:0;
@@ -522,7 +522,7 @@ left:15px;
 }
 
 .hot-offer__title {
-    margin: 17px 18px;
+    margin: 16px 18px 15px 18px;
     font-size: 35px;
     font-weight: 700;
     line-height: 41px;
@@ -553,12 +553,13 @@ left:15px;
     line-height: 24px;
 }
 /*============================== hits =======================================*/
-.our-hits {
+.assortment {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.our-hits__item {
+.assortment__item {
     position: relative;
     width: 267px;
     text-align: center;
@@ -576,7 +577,7 @@ left:15px;
   left:0;
 }
 
-.our-hits__price {
+.assortment__price {
     position: absolute;
     top:164px;
     left:-1px;
@@ -585,24 +586,24 @@ left:15px;
     line-height: 45px;
 }
 
-.our-hits__currency {
+.assortment__currency {
     margin-left: 3px;
 }
 
-.our-hits__weight {
+.assortment__weight {
     font-size: 30px;
     font-weight: 700;
     line-height: 45px;
 }
 
-.our-hits__name {
+.assortment__name {
     display: inline;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 /*========================================================================*/
 .advantages {
-    margin-top: 39px;
-    margin-bottom: 42px;
+    margin-top: 38px;
+    margin-bottom: 39px;
     padding: 5px 21px 25px;
     border-radius: 13px;
     background-color: #f1e6ce;
@@ -614,7 +615,7 @@ left:15px;
     font-size: 24px;
     font-weight: 500;
     line-height: 30px;
-    margin-bottom: 0;
+    margin: 18px 0 0 0;
 }
 
 .advantages__text {
@@ -625,7 +626,7 @@ left:15px;
 .advantages__text p {
     position: relative;
     width: 50%;
-    margin: 24px 0 0 0;
+    margin: 22px 0 0 0;
     padding: 0 0 0 71px;
 }
 
@@ -840,6 +841,10 @@ footer ul {
     color: #fff;
 }
 
+.copyright span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .inform__suppliers {
     position: relative;
 }
@@ -965,3 +970,39 @@ footer ul {
     padding: 10px 24px;
 }
 /*==========================================================*/
+/*====================== catalog ====================================*/
+.nav__menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav__link_main,
+.nav__link_catalog
+{
+    padding-right: 10px;
+}
+
+.nav__link_main::after,
+.nav__link_catalog::after
+{
+    content: '»';
+    padding-left: 10px;
+}
+
+.sort__form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sort__item-1 label,
+.sort__item-2 label{
+    display: block;
+}
