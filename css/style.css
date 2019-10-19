@@ -205,10 +205,13 @@ body {
 }
 
 .drop-menu li:not(:first-child):hover,
-.drop-menu a:focus,
-.selected
+.drop-menu a:focus
 {
     background-color: #fbded8;
+}
+
+.drop-menu a:active {
+    background-color: #f6b5a5;
 }
 
 .menu__item-1:hover .drop-menu,
@@ -431,8 +434,6 @@ left:15px;
     font-weight: 700;
     line-height: 44px;
     padding: 10px 40px;
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-    background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 
 .switch {
@@ -543,7 +544,6 @@ left:15px;
 }
 
 .red-button {
-    color: #fff;
     border-radius: 100Px;
     border: none;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -551,7 +551,21 @@ left:15px;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    color: #fff;
+    cursor: pointer;
 }
+
+.red-button:hover {
+    box-shadow: 0 2px 2px #ac1000;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
+    linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+.red-button:active {
+    box-shadow: inset 0 2px 2px #942718;
+    background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+}
+
 /*============================== hits =======================================*/
 .assortment {
     display: flex;
