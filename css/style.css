@@ -500,6 +500,11 @@ left:15px;
 {
     box-shadow: 0 0 0 4px rgba(99, 122, 209, 0.5);
 }
+
+.toggle:hover::before {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
 /*================================================================*/
 .hot-offer {
     display: flex;
@@ -586,6 +591,11 @@ left:15px;
 .picture {
     min-height: 267px;
     margin-bottom: 8px;
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
 }
 
 .hit::after {
@@ -1050,6 +1060,7 @@ footer ul {
 
 .sort__item-1 label,
 .sort__cost-range,
+.sort__item-2 h4,
 .sort__item-3 h4,
 .sort__item-4 h4
 {
@@ -1104,6 +1115,12 @@ footer ul {
     display: none;
 }
 
+.sort__select:hover,
+.sort__select:hover
+{
+    color:#323232;
+}
+
 .sort__select option {
     background-color: #aabcb2;
 }
@@ -1137,7 +1154,7 @@ footer ul {
 .sort__cost-range::before {
     content: '';
     position: absolute;
-    bottom: -25px;
+    bottom: -20px;
     left:27px;
     width: 100px;
     height: 4px;
@@ -1149,19 +1166,26 @@ footer ul {
 {
     content: '';
     position: absolute;
-    top:16px;
-    left:43px;
-    width: 4px;
-    height: 4px;
+    top:9px;
+    left:35px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: #ababab;
-    box-shadow: 0 0 0 8px rgba(255, 255, 255, 1);
+    box-shadow:inset 0 0 0 8px #fff;
+    cursor: pointer;
     z-index: 1;
 }
 
 .sort__cost-range::after  {
-    top: 37px;
-    left:125px;
+    top: 9px;
+    left:117px;
+}
+
+.sort__double-range:hover::after,
+.sort__cost-range:hover::after
+{
+    transform: scale(1.1);
 }
 
 .sort__richness,
