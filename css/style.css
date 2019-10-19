@@ -557,12 +557,16 @@ left:15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .assortment__item {
     position: relative;
     width: 267px;
     text-align: center;
+    margin-bottom: 37px;
 }
 
 .picture {
@@ -971,14 +975,14 @@ footer ul {
 }
 /*==========================================================*/
 /*====================== catalog ====================================*/
-.nav__menu {
+.nav-menu {
     padding: 0;
     margin: 0;
     display: flex;
     list-style: none;
 }
 
-.nav__menu_path {
+.nav-menu_path {
     margin-top: -20px;
 }
 
@@ -1001,6 +1005,18 @@ footer ul {
     padding-left: 7px;
 }
 
+.sort {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sort::before {
+    width: 100%;
+    bottom: 0;
+    left:0;
+}
+
 .sort__bg {
     width: 100%;
     height: 36px;
@@ -1011,6 +1027,7 @@ footer ul {
 .sort__form {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
 .sort__form > div {
@@ -1029,7 +1046,7 @@ footer ul {
     line-height: 16px;
 }
 
-.nav__menu_path a {
+.nav-menu_path a {
     position: relative;
     font-size: 14px;
     font-weight: 400;
@@ -1183,4 +1200,83 @@ footer ul {
     border: 2px solid #ffffff;
 }
 
+.assortment__item_5 .assortment__name {
+     padding-left: 7px;
+ }
+
+.assortment__item_9 .assortment__name {
+    padding-left: 11px;
+}
+
+.assortment__item_10 .assortment__name {
+    padding-left: 1px;
+}
+
+.assortment_catalog {
+    margin-bottom: 43px;
+    position: relative;
+}
+/*================================================*/
+.nav-pages {
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.nav-pages__link:not(.nav-pages__link_1):not(.nav-pages__link_7) {
+    width: 26px;
+    height: 26px;
+    padding: 5px 0 0 0;
+    margin-right: 3px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+}
+
+.nav-pages__link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /*color: #353535;*/
+}
+
+.nav-pages__link:focus,
+.nav-pages__link_active
+{
+    background-color: #fff;
+    color: #353535;
+}
+
+
+.nav-pages__link_1 {
+    width: 20px;
+    position: relative;
+}
+
+.nav-pages__link_7 {
+    width: 21px;
+    position: relative;
+}
+
+.nav-pages__link_1::before,
+.nav-pages__link_7::before
+{
+    content: '';
+    position: absolute;
+    top:8px;
+    left:-2px;
+    width: 9px;
+    height: 9px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(-45deg);
+}
+
+.nav-pages__link_1::before {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-pages__link_7::before {
+    transform: rotate(135deg);
+    left:9px;
+}
 
