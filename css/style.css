@@ -230,13 +230,11 @@ body {
     height: 33px;
     border-radius: 50%;
     position: relative;
+    margin-bottom: 8px;
 }
 
-.menu__search::before {
-content: url('../img/svg-gllacy/loupe.svg');
-position: absolute;
-top:8px;
-left:8px;
+.menu__search svg {
+    margin-top: 2px;
 }
 
 .menu__search_input {
@@ -252,12 +250,37 @@ left:8px;
     background-color: #f8f7f4;
 }
 
+.menu__sublist:active {
+    box-shadow: inset 0 2px 1px #696969;
+}
+
 .menu__item-4:hover div,
 .menu__search:focus + div,
 .menu__search_input:hover,
 .menu__search_input:focus
 {
     display: block;
+}
+
+.menu__item-4:hover .svg-black,
+.menu__item-4:focus .svg-black,
+.menu__item-5:hover .svg-black,
+.menu__item-5:focus .svg-black,
+.menu__item-6:hover .svg-black,
+.menu__item-6:focus .svg-black
+{
+    fill: #000;
+}
+
+.menu__item-4:hover .menu__search,
+.menu__item-4:focus .menu__search,
+.menu__item-5:hover .menu__enter,
+.menu__item-5:focus .menu__enter,
+.menu__item-6:hover .menu__cart,
+.menu__item-6:focus .menu__cart
+{
+    background-color: #fff;
+    color: #000;
 }
 
 .menu__search_input input {
@@ -331,31 +354,31 @@ left:8px;
 .menu__enter,
 .menu__cart
 {
-    padding: 7px 17px 7px 44px;
+    padding: 6px 17px 6px 16px;
     margin-bottom: 6px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
 }
 
+.menu__cart svg {
+    vertical-align: -5px;
+    margin-right: 3px;
+}
+
+.menu__enter {
+    padding: 6px 17px 7px 16px;
+}
+
+.menu__enter svg {
+    vertical-align: -5px;
+    margin-right: 3px;
+}
+
 .menu__item-6 a {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-}
-
-.menu__enter::before {
-content: url("../img/svg-gllacy/entrance.svg");
-position: absolute;
-top:5px;
-left:17px;
-}
-
-.menu__cart::after {
-content: url("../img/svg-gllacy/basket.svg");
-position: absolute;
-top:5px;
-left:15px;
 }
 
 .schedule {
