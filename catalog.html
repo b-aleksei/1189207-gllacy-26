@@ -17,13 +17,13 @@
 			<img class="menu__logo" src="./img/Logo.png" alt="logo" width="154" height="64">
 			<ul class="menu__list">
 				<li class="menu__item-1">
-					<a href="#" class="menu__sublist underline" type="button">Каталог</a>
+					<a href="#" class="menu__sublist menu__sublist_catalog" type="button">Каталог</a>
 					<ul class="drop-menu">
 						<li class="drop-menu__link-1">Новинки</li>
-						<li class="drop-menu__link-2"><a href="catalog.html">Сливочное</a></li>
-						<li class="drop-menu__link-3 selected"><a href="#">Щербеты</a></li>
-						<li class="drop-menu__link-4"><a href="#">Фруктовый лед</a></li>
-						<li class="drop-menu__link-5"><a href="#">Мелорин</a></li>
+						<li class="drop-menu__link_2"><a class="drop-menu__link drop-menu__link_catalog" href="catalog.html">Сливочное</a></li>
+						<li class="drop-menu__link-3"><a class="drop-menu__link" href="#">Щербеты</a></li>
+						<li class="drop-menu__link-4"><a class="drop-menu__link" href="#">Фруктовый лед</a></li>
+						<li class="drop-menu__link-5"><a class="drop-menu__link" href="#">Мелорин</a></li>
 					</ul>
 				</li>
 				<li class="menu__item-2">
@@ -107,7 +107,7 @@
 					<div class="sort__richness sort__bg">
 						<input class="visually-hidden sort__radio" type="radio" name="radio" id="radio-1">
 						<label  for="radio-1">0%</label>
-						<input class="visually-hidden sort__radio" type="radio" name="radio" id="radio-2">
+						<input class="visually-hidden sort__radio" type="radio" name="radio" id="radio-2" checked>
 						<label for="radio-2">до 10%</label>
 						<input class="visually-hidden sort__radio" type="radio" name="radio" id="radio-3">
 						<label for="radio-3">до 30%</label>
@@ -143,6 +143,7 @@
 						class="assortment__weight">/кг</span>
 					</p>
 					<p class="assortment__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
 				</li>
 				<li class="assortment__item">
 					<div class="picture">

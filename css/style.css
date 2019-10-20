@@ -31,25 +31,6 @@ body {
     overflow: hidden;
 }
 
-.blue {
-    outline: 1px solid blue;
-}
-.red {
-    outline: 1px solid red;
-}
-.green {
-    outline: 1px solid green;
-}
-.temp {
-    background-color: rgba(255, 0, 0, 0.1);
-}
-.temp > * {
-    outline: 1px dotted #f00;
-}
-.temp > * > *{
-    background-color: rgba(0, 255, 0, 0.1);
-}
-
 .container {
     position: relative;
     width: 1200px;
@@ -116,7 +97,6 @@ body {
     left:12px;
     width: 80%;
     height: 1px;
-    /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -144,6 +124,11 @@ body {
     background-color: #f7f6f3;
     color: #323232;
     font-weight: 700;
+}
+
+.menu__list .menu__sublist_catalog {
+    background-color: #d07058;
+    color: #fff;
 }
 
 .menu__item-1,
@@ -204,8 +189,8 @@ body {
     padding-bottom: 14px;
 }
 
-.drop-menu li:not(:first-child):hover,
-.drop-menu a:focus
+.drop-menu__link:not(.drop-menu__link_catalog):hover,
+.drop-menu__link:focus
 {
     background-color: #fbded8;
 }
@@ -214,8 +199,12 @@ body {
     background-color: #f6b5a5;
 }
 
+.drop-menu__link_catalog {
+    background-color: #d07058;
+}
+
 .menu__item-1:hover .drop-menu,
-    .menu__sublist:focus + .drop-menu,
+.menu__sublist:focus + .drop-menu,
 .drop-menu:hover {
     display: block;
 }
@@ -585,7 +574,28 @@ left:15px;
     position: relative;
     width: 267px;
     text-align: center;
-    margin-bottom: 37px;
+    /*margin-bottom: 37px;*/
+}
+
+.assortment__item_button {
+    position: absolute;
+    bottom:-30px;
+    left: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.assortment__item_button::before {
+    content: '';
+    position: absolute;
+    bottom:-100px;
+    left:0;
+    width: 300px;
+    height: 300px;
+    background-color: darkcyan;
+    z-index: -20;
+
 }
 
 .picture {
@@ -612,6 +622,7 @@ left:15px;
     font-size: 45px;
     font-weight: 700;
     line-height: 45px;
+    text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .assortment__currency {
@@ -1327,15 +1338,15 @@ fill: #ffbc9e;
 }
 
 .assortment__item_5 .assortment__name {
-     padding-left: 7px;
+     margin-left: 7px;
  }
 
 .assortment__item_9 .assortment__name {
-    padding-left: 11px;
+    margin-left: 11px;
 }
 
 .assortment__item_10 .assortment__name {
-    padding-left: 1px;
+    margin-left: 1px;
 }
 
 .assortment_catalog {
