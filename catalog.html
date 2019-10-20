@@ -13,9 +13,11 @@
 <body>
 <div class="container">
 	<header>
-		<div class="menu">
-			<img class="menu__logo" src="./img/Logo.png" alt="logo" width="154" height="64">
-			<ul class="menu__list">
+		<div class="menu menu_catalog">
+			<a href="index.html">
+				<img class="menu__logo" src="./img/Logo.png" alt="logo" width="154" height="64">
+			</a>
+			<ul class="menu__list menu__list_catalog">
 				<li class="menu__item-1">
 					<a href="#" class="menu__sublist menu__sublist_catalog" type="button">Каталог</a>
 					<ul class="drop-menu">
@@ -67,7 +69,18 @@
 				<li class="menu__item-6">
 					<a class="button menu__cart" href="#" aria-label="Козина">
 						<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
-						<span>2 товара</span></a>
+						<span>2 товара</span>
+					</a>
+					<!--<div class="cart">
+						<div class="cart__item">
+							
+						</div>
+						<div class="cart__item">
+							
+						</div>
+						<p class="cart__total">Итого: 750 руб.</p>
+						<button type="button"></button>
+					</div>-->
 				</li>
 			</ul>
 		</div>
