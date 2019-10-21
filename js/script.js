@@ -1,5 +1,6 @@
 let link = document.querySelector('.feedback-open');
 let popup = document.querySelector('.feedback');
+let section_form = document.querySelector('.feedback__body');
 let close = popup.querySelector('.feedback__close');
 let form = popup.querySelector(".feedback__form");
 let login = popup.querySelector("[name=username]");
@@ -27,30 +28,19 @@ link.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("feedback-block");
-    popup.classList.remove("modal-error");
+    section_form.classList.remove("form-error");
 });
 
 form.addEventListener("submit", function (evt) {
     if (!login.value || !email.value) {
         evt.preventDefault();
-        popup.classList.remove("modal-error");
+        section_form.classList.remove("form-error");
         // noinspection SillyAssignmentJS
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("modal-error");
+        section_form.offsetWidth = section_form.offsetWidth;
+        section_form.classList.add("form-error");
     } else {
         if (isStorageSupport) {
             localStorage.setItem("login", login.value);
-        }
-    }
-});
-
-window.addEventListener("keydown", function (evt) {
-    // noinspection JSDeprecatedSymbols
-    if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal-show")) {
-            popup.classList.remove("modal-show");
-            popup.classList.remove("modal-error");
         }
     }
 });

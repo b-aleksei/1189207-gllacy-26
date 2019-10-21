@@ -343,6 +343,8 @@ body {
     width: 100%;
     padding: 11px;
     margin-bottom: 20px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
 }
 
 .enter input::placeholder {
@@ -530,6 +532,7 @@ body {
 
 .slider > div:not(:first-child) {
     display: none;
+
 }
 
 .slider__backlight {
@@ -1140,13 +1143,15 @@ fill: #ffbc9e;
     left:0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 11;
 }
 
 .feedback-block {
     display: block;
-    -webkit-animation: bounce 0.6s;
-    animation: bounce 0.6s;
+    /*animation: bounce 0.6s;*/
+    background-color: rgba(0, 0, 0, 0.3);
+    transition-property: background-color;
+    transition-delay: 1s;
 }
 
 .form-error {
@@ -1156,16 +1161,14 @@ fill: #ffbc9e;
 
 .feedback__body {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    top:17%;
+    left:32%;
     padding: 16px 26px 20px 24px;
     width: 476px;
-    height: 443px;
+    min-height: 443px;
     border-radius: 10px;
     background-color: #f8f7f4;
     color: #323232;
-    z-index: 25;
 }
 
 .feedback__body h2 {
@@ -1177,17 +1180,28 @@ fill: #ffbc9e;
 
 .feedback__body input {
     width: 267px;
+    height: 44px;
     padding: 13px;
     margin-bottom: 18px;
     border: 1px solid rgba(178, 178, 178, 0.52);
     background-color: #ffffff;
     border-radius: 5px;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 .feedback__body textarea {
+    width: 428px;
+    height: 155px;
     padding: 10px 13px 17px 13px;
     border-radius: 5px;
     border: 1px solid rgba(178, 178, 178, 0.52);
+    color: #323232;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 .feedback__body input::placeholder,
@@ -1197,6 +1211,12 @@ fill: #ffbc9e;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+}
+
+.feedback__body input:hover,
+.feedback__body textarea:hover
+{
+    border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
 .feedback__close {

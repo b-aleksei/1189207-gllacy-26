@@ -285,9 +285,9 @@
 	<section class="feedback__body">
 		<h2>Мы обязательно вам ответим!</h2>
 		<form class="feedback__form" action="" method="post">
-			<input type="text" name="username" id="name" placeholder="Имя Фамилия">
+			<input type="text" name="username" id="name" pattern="[A-zА-я]{2,}" placeholder="Имя Фамилия">
 			<label class="visually-hidden" for="name">Введите ваше имя</label>
-			<input type="email" name="my-email" id="my-email" placeholder="email@example.com">
+			<input type="email" name="my-email" id="my-email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="email@example.com">
 			<label class="visually-hidden" for="my-email">Введите ваш емайл</label>
 			<textarea name="comment" id="comment" cols="48" rows="7" placeholder="В свободной форме"></textarea>
 			<label class="visually-hidden" for="comment">Введите ваш комментарий</label>
