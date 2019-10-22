@@ -877,6 +877,7 @@ body {
 }
 /*========================================================*/
 .info {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     color: #323232;
@@ -949,28 +950,20 @@ body {
 }
 
 .map {
-    width: 100%;
-    min-height: 430px;
-    position: relative;
+    height: 430px;
     margin-top: 40px;
     background-image: url("../img/Layer_3.png");
 }
 
-.map iframe {
-    position: absolute;
-    top:0;
-    left:-27px;
-    z-index: 0;
-}
-
 .address {
     position: absolute;
-    top:59px;
+    top:323px;
     right:0;
+    margin-left: auto;
     width: 302px;
-    padding: 32px 25px;
+    padding: 30px 25px;
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 15px;
     z-index: 3;
 }
 
