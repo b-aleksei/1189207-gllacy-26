@@ -1624,14 +1624,16 @@ footer ul {
     display: none;
 }
 
-.sort__item-1:hover .sort__select
-{
+.sort__select:hover {
     color:#323232;
     background-color: #fff;
 }
 
-.sort__item-1:hover::after
-{
+.sort__select:focus option {
+    color:#323232;
+}
+
+.sort__item-1:hover::after {
     border-color: #323232 transparent transparent transparent;
     border-width: 7px 5px 0 5px;
     top: 36px;
