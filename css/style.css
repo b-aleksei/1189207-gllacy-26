@@ -88,16 +88,27 @@ body {
     flex-grow: 1;
 }
 
+.menu_popup {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
 .menu__list_catalog {
     margin: 0 0 0 0;
 }
 
 .menu__list a,
-.menu__list button {
+.menu__list button
+{
     position: relative;
 }
 
-.menu__list a {
+.menu__list a,
+.menu_popup a
+{
     display: block;
     text-decoration: none;
     color: inherit;
@@ -156,11 +167,16 @@ body {
     padding: 5px 3px 11px 0;
 }
 
-.menu__item-4,
-.menu__item-5,
-.menu__item-6
+.menu__item-search,
+.menu__item-enter,
+.menu__item-cart
 {
     padding: 0 0 0 10px;
+}
+
+.menu__item-enter,
+.menu__item-cart {
+    padding-bottom: 3px;
 }
 /*================= drop menu======================*/
 .drop-menu {
@@ -184,7 +200,7 @@ body {
     flex-grow: 1;
 }
 
-.drop-menu__link-5 {
+.drop-menu__bottom {
     border-radius: 0 0 5px 5px;
 }
 
@@ -196,7 +212,7 @@ body {
     color: #323232;
 }
 
-.drop-menu__link-1 {
+.drop-menu__top {
     padding: 11px 0 10px 14px;
     margin:0 9px 0 5px;
     border-bottom: 2px solid #d1d0ce;
@@ -206,15 +222,15 @@ body {
     color: #323232;
 }
 
-.drop-menu__link-2 a {
+.drop-menu__link_style {
     padding-top: 11px;
 }
 
-.drop-menu__link-5 a {
+.drop-menu__bottom a {
     padding-bottom: 14px;
 }
 
-.drop-menu__link:not(.drop-menu__link_catalog):hover,
+.drop-menu__link:not(.drop-menu__link-catalog):hover,
 .drop-menu__link:focus
 {
     background-color: #fbded8;
@@ -224,7 +240,7 @@ body {
     background-color: #f6b5a5;
 }
 
-.drop-menu__link_catalog {
+.drop-menu__link-catalog {
     background-color: #d07058;
 }
 
@@ -235,9 +251,9 @@ body {
 }
 /*======================================================*/
 .menu__item-1,
-.menu__item-4,
-.menu__item-5,
-.menu__item-6
+.menu__item-search,
+.menu__item-enter,
+.menu__item-cart
 {
     position: relative;
 }
@@ -256,7 +272,6 @@ body {
     height: 33px;
     border-radius: 50%;
     position: relative;
-    margin-bottom: 8px;
 }
 
 .menu__search svg {
@@ -266,7 +281,7 @@ body {
 .menu__search_input {
     display: none;
     position: absolute;
-    bottom:-82px;
+    bottom:-87px;
     left:-298px;
     width: 341px;
     height: 84px;
@@ -284,7 +299,7 @@ body {
     box-shadow: inset 0 2px 1px #696969;
 }
 
-.menu__item-4:hover div,
+.menu__item-search:hover div,
 .menu__search:focus + div,
 .menu__search_input:hover,
 .menu__search_input:focus
@@ -292,29 +307,29 @@ body {
     display: block;
 }
 
-.menu__item-4:hover .svg-black,
-.menu__item-4 .menu__search:focus .svg-black,
-.menu__item-5:hover .svg-black,
-.menu__item-5 .menu__enter:focus .svg-black,
-.menu__item-6:hover .svg-black,
-.menu__item-6 .menu__cart:focus .svg-black
+.menu__item-search:hover .svg-black,
+.menu__item-search .menu__search:focus .svg-black,
+.menu__item-enter:hover .svg-black,
+.menu__item-enter .menu__enter:focus .svg-black,
+.menu__item-cart:hover .svg-black,
+.menu__item-cart .menu__cart:focus .svg-black
 {
     fill: #000;
 }
 
-.menu__item-4:hover .menu__search,
+.menu__item-search:hover .menu__search,
 .menu__search:focus,
-.menu__item-5:hover .menu__enter,
+.menu__item-enter:hover .menu__enter,
 .menu__enter:focus,
-.menu__item-6:hover .menu__cart,
+.menu__item-cart:hover .menu__cart,
 .menu__cart:focus
 {
     background-color: #fff;
     color: #000;
 }
 
-.menu__item-6:hover .cart,
-.menu__item-6 .menu__cart:focus + .cart,
+.menu__item-cart:hover .cart,
+.menu__item-cart .menu__cart:focus + .cart,
 .cart:hover
 {
     visibility: visible;
@@ -383,7 +398,7 @@ body {
 .enter input {
     width: 100%;
     padding: 11px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     border: 1px solid #d3d3d2;
     border-radius: 5px;
 }
@@ -437,15 +452,20 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    border-radius: 21px;
+    margin-right: 17px;
 }
 
 .enter__buttons a {
+    display: inline;
     font-size: 13px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 24px;
+    color: #323232;
+    border-bottom: 1px solid #d3d3d2;
 }
 
-.menu__item-5:hover .enter,
+.menu__item-enter:hover .enter,
 .menu__enter:focus + .enter,
 .enter:hover {
     display: block;
@@ -569,10 +589,13 @@ body {
 .menu__cart
 {
     padding: 6px 17px 6px 16px;
-    margin-bottom: 6px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
+}
+
+.menu__cart {
+    padding-top: 7px;
 }
 
 .menu__cart svg {
@@ -589,7 +612,7 @@ body {
     margin-right: 3px;
 }
 
-.menu__item-6 a {
+.menu__item-cart a {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
@@ -750,7 +773,7 @@ body {
     margin-bottom: 40px;
 }
 
-.hot-offer section {
+.hot-offer article {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -850,19 +873,11 @@ body {
     margin-bottom: 37px;
 }
 
-.assortment__item_5,
-.assortment__item_6,
-.assortment__item_7,
-.assortment__item_8
-{
+.assortment__item_middle-row {
     z-index: 9;
 }
 
-.assortment__item_9,
-.assortment__item_10,
-.assortment__item_11,
-.assortment__item_12
-{
+.assortment__item_bottom-row {
     z-index: 8;
 }
 
@@ -890,7 +905,6 @@ body {
     border-radius: 20px;
 }
 
-/*.assortment__item::before,*/
 .picture::before {
     opacity: 0;
     content: '';
