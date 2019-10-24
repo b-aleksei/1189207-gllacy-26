@@ -959,7 +959,10 @@ body {
 
 .assortment__name {
     display: inline;
+    font-weight: 500;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: inherit;
+    text-decoration: none;
 }
 /*========================================================================*/
 .advantages {
@@ -1576,15 +1579,17 @@ footer ul {
     margin-bottom: 25px;
 }
 
-.sort__form > div {
+.sort__form > fieldset {
     margin: 0 14px 16px 0;
+    padding: 0;
+    border: none;
 }
 
 .sort__item-1 label,
 .sort__cost-range,
-.sort__item-2 h4,
-.sort__item-3 h4,
-.sort__item-4 h4
+.sort__item-2 legend,
+.sort__item-3 legend,
+.sort__item-4 legend
 {
     display: block;
     margin: 0 0 5px 17px;
@@ -1679,9 +1684,9 @@ footer ul {
 .sort__cost-range::before {
     content: '';
     position: absolute;
-    bottom: -20px;
-    left:27px;
-    width: 100px;
+    bottom: 16px;
+    left:37px;
+    width: 82px;
     height: 4px;
     background-color: #fff;
 }
@@ -1704,7 +1709,7 @@ footer ul {
 }
 
 .sort__cost-range::after  {
-    top: 9px;
+    top: -28px;
     left:117px;
 }
 
@@ -1750,7 +1755,7 @@ footer ul {
 .sort__powder label::before {
     content: url("../img/svg-gllacy/checkbox-off.svg");
     position: absolute;
-    top:-1px;
+    top:-2px;
     left:17px;
     width: 20px;
     height: 20px;

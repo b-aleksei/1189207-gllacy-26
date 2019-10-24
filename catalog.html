@@ -35,6 +35,8 @@
 				<li class="menu__item-3">
 					<a class="underline" href="#">О Компании</a>
 				</li>
+			</ul>
+			<ul class="menu_popup">
 				<li class="menu__item-search">
 					<form action="#" method="get">
 						<button class="button menu__search" type="submit" aria-label="поиск по сайту"
@@ -122,24 +124,24 @@
 			<h1 class="sort__title">Сливочное мороженое</h1>
 			<h3 class="visually-hidden">Сортировка:</h3>
 			<form class="sort__form" action="#" method="post">
-				<div class="sort__item-1">
-					<label for="sort">Сортировка:</label>
+				<fieldset class="sort__item-1">
+					<legend><label for="sort">Сортировка:</label></legend>
 					<select class="sort__select sort__bg" name="sort" id="sort">
 						<option class="sort__arrow" selected>по популярности</option>
 						<option>сначала недорогие</option>
 						<option>сначала дорогие</option>
 						<option>по жирности</option>
 					</select>
-				</div>
-				<div class="sort__item-2">
-					<h4>Цена: 100 руб. – 500 руб.</h4>
+				</fieldset>
+				<fieldset class="sort__item-2">
+					<legend>Цена: 100 руб. – 500 руб.</legend>
 					<input class="visually-hidden double-range double-range_1" type="range" name="range-1" id="range-1">
 					<input class="visually-hidden double-range double-range_2" type="range" name="range-2" id="range-2">
 					<label class="sort__double-range sort__bg" for="range-2"></label>
 					<label class="sort__cost-range" for="range-1"></label>
-				</div>
-				<div class="sort__item-3">
-					<h4>Жирность:</h4>
+				</fieldset>
+				<fieldset class="sort__item-3">
+					<legend>Жирность:</legend>
 					<div class="sort__richness sort__bg">
 						<input class="visually-hidden sort__radio" type="radio" name="radio" id="radio-1">
 						<label  for="radio-1">0%</label>
@@ -150,9 +152,9 @@
 						<input class="visually-hidden sort__radio" type="radio" name="radio" id="radio-4">
 						<label for="radio-4">выше 30%</label>
 					</div>
-				</div>
-				<div class="sort__item-4">
-					<h4>Наполнители:</h4>
+				</fieldset>
+				<fieldset class="sort__item-4">
+					<legend>Наполнители:</legend>
 					<div class="sort__powder sort__bg">
 						<input class="visually-hidden sort__check" type="checkbox" name="chocolate" id="chocolate" checked>
 						<label for="chocolate">шоколадные</label>
@@ -165,7 +167,7 @@
 						<input class="visually-hidden sort__check" type="checkbox" name="jam" id="jam">
 						<label class="sort__label-padding" for="jam">джемы</label>
 					</div>
-				</div>
+				</fieldset>
 					<button class="sort__accept button" type="submit">Применить</button>
 			</form>
 			<ul class="assortment assortment_catalog">
@@ -179,7 +181,7 @@
 					<p class="assortment__price">310<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+					<a href="#" class="assortment__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 				</li>
 				<li class="assortment__item">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -190,7 +192,7 @@
 					<p class="assortment__price">380<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочно-кофейное с кусочками шоколада</p>
+					<a href="#" class="assortment__name">Сливочно-кофейное с кусочками шоколада</a>
 				</li>
 				<li class="assortment__item">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -202,7 +204,7 @@
 					<p class="assortment__price">355<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочно-клубничное с присыпкой из белого шоколада</p>
+					<a href="#" class="assortment__name">Сливочно-клубничное с присыпкой из белого шоколада</a>
 				</li>
 				<li class="assortment__item">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -214,7 +216,7 @@
 					<p class="assortment__price">415<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочное крем-брюле с карамельной подливкой</p>
+					<a href="#" class="assortment__name">Сливочное крем-брюле с карамельной подливкой</a>
 				</li>
 				<li class="assortment__item assortment__item_middle-row">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -226,7 +228,7 @@
 					<p class="assortment__price">325<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочное с брусничным джемом</p>
+					<a href="#" class="assortment__name">Сливочное с брусничным джемом</a>
 				</li>
 				<li class="assortment__item assortment__item_middle-row">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -238,7 +240,7 @@
 					<p class="assortment__price">410<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочно-черничное с цельными ягодами черники</p>
+					<a href="#" class="assortment__name">Сливочно-черничное с цельными ягодами черники</a>
 				</li>
 				<li class="assortment__item assortment__item_middle-row">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -250,7 +252,7 @@
 					<p class="assortment__price">375<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочно-лимонное с карамельной присыпкой</p>
+					<a href="#" class="assortment__name">Сливочно-лимонное с карамельной присыпкой</a>
 				</li>
 				<li class="assortment__item assortment__item_middle-row">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -262,7 +264,7 @@
 					<p class="assortment__price">320<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочное с шоколадной стружкой</p>
+					<a href="#" class="assortment__name">Сливочное с шоколадной стружкой</a>
 				</li>
 				<li class="assortment__item assortment__item_bottom-row">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -274,7 +276,7 @@
 					<p class="assortment__price">440<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочно-ванильное с кусочками шоколада</p>
+					<a href="#" class="assortment__name">Сливочно-ванильное с кусочками шоколада</a>
 				</li>
 				<li class="assortment__item assortment__item_bottom-row">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -286,7 +288,7 @@
 					<p class="assortment__price">435<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочное с ментоловым сиропом</p>
+					<a href="#" class="assortment__name">Сливочное с ментоловым сиропом</a>
 				</li>
 				<li class="assortment__item assortment__item_bottom-row">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -298,7 +300,7 @@
 					<p class="assortment__price">355<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочное с кусочками черного шоколада</p>
+					<a href="#" class="assortment__name">Сливочное с кусочками черного шоколада</a>
 				</li>
 				<li class="assortment__item assortment__item_bottom-row">
 					<button class="red-button assortment__item_button" type="button">Быстрый просмотр</button>
@@ -310,7 +312,7 @@
 					<p class="assortment__price">420<span class="assortment__currency">₽</span><span
 						class="assortment__weight">/кг</span>
 					</p>
-					<p class="assortment__name">Сливочное с мятным сиропом</p>
+					<a href="#" class="assortment__name">Сливочное с мятным сиропом</a>
 				</li>
 
 			</ul>
