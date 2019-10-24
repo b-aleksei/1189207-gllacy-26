@@ -114,7 +114,7 @@ body {
     color: inherit;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .underline::before {
@@ -308,11 +308,11 @@ body {
 }
 
 .menu__item-search:hover .svg-black,
-.menu__item-search .menu__search:focus .svg-black,
+.menu__search:focus .svg-black,
 .menu__item-enter:hover .svg-black,
-.menu__item-enter .menu__enter:focus .svg-black,
+.menu__enter:focus .svg-black,
 .menu__item-cart:hover .svg-black,
-.menu__item-cart .menu__cart:focus .svg-black
+.menu__cart:focus .svg-black
 {
     fill: #000;
 }
@@ -329,7 +329,7 @@ body {
 }
 
 .menu__item-cart:hover .cart,
-.menu__item-cart .menu__cart:focus + .cart,
+.menu__cart:focus + .cart,
 .cart:hover
 {
     visibility: visible;
@@ -801,10 +801,12 @@ body {
 }
 
 .hot-offer__text {
-    margin: 0 18px 23px 18px;
+    height: 66px;
+    margin: 0 18px 0 18px;
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
+    overflow: hidden;
 }
 
 .hot-offer__oder {
@@ -1254,7 +1256,7 @@ footer ul {
 {
     font-size: 13px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 16px;
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
@@ -1262,6 +1264,16 @@ footer ul {
 
 .inform__link_1 {
     text-decoration: none;
+}
+
+.inform__link_1 span {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.inform__link_2 {
+    margin-left: 7px;
 }
 
 .inform__suppliers {
@@ -1316,6 +1328,10 @@ footer ul {
     line-height: 18px;
 }
 
+.copyright__link svg {
+    margin-top: 1px;
+}
+
 .copyright__logo {
     width: 108px;
     height: 39px;
@@ -1358,11 +1374,13 @@ footer ul {
 
 .feedback__body {
     position: absolute;
-    top:17%;
-    left:32%;
+    top: 50%;
+    left: 50%;
+    margin-left: -238px;
+    margin-top: -220px;
     padding: 16px 26px 20px 24px;
     width: 476px;
-    min-height: 443px;
+    height: 443px;
     border-radius: 10px;
     background-color: #f8f7f4;
     color: #323232;
@@ -1446,10 +1464,10 @@ footer ul {
     line-height: 24px;
 }
 
-.feedback__body input:hover,
-.feedback__body textarea:hover
+.feedback__body input:not(:focus):hover,
+.feedback__body textarea:not(:focus):hover
 {
-    border: 2px solid rgba(154, 154, 154, 0.52);
+    box-shadow: 0 0 0 2px rgba(154, 154, 154, 0.52);
 }
 
 .feedback__close {
@@ -1580,7 +1598,7 @@ footer ul {
 }
 
 .sort__form > fieldset {
-    margin: 0 14px 16px 0;
+    margin: 0 14px 13px 0;
     padding: 0;
     border: none;
 }
@@ -1625,6 +1643,9 @@ footer ul {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
 }
 
 .sort__item-1::after {
@@ -1755,8 +1776,8 @@ footer ul {
 .sort__powder label::before {
     content: url("../img/svg-gllacy/checkbox-off.svg");
     position: absolute;
-    top:-2px;
-    left:17px;
+    top:-3px;
+    left:16px;
     width: 20px;
     height: 20px;
 }
@@ -1800,6 +1821,9 @@ footer ul {
     height: 37px;
     margin-top: 21px;
     border: 2px solid #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
 }
 
 .sort__accept:hover,
@@ -1809,16 +1833,12 @@ footer ul {
     color: #323232;
 }
 
-.assortment__item_5 .assortment__name {
-    margin-left: 7px;
+.assortment__name_5 {
+    margin-left: 5px;
 }
 
-.assortment__item_9 .assortment__name {
-    margin-left: 11px;
-}
-
-.assortment__item_10 .assortment__name {
-    margin-left: 1px;
+.assortment__name_9 {
+    margin-left: 9px;
 }
 
 .assortment_catalog {
@@ -1855,10 +1875,14 @@ footer ul {
     color: #353535;
 }
 
-.nav-pages__link_1,
-.nav-pages__link_7
-{
+.nav-pages__link_1 {
     position: relative;
+    margin-right: 4px;
+}
+
+.nav-pages__link_7 {
+    position: relative;
+    margin-right: -6px;
 }
 
 .nav-pages__link_1::before,
@@ -1885,7 +1909,7 @@ footer ul {
     -webkit-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
-    left:7px;
+    left:8px;
 }
 
 
