@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    min-width: 1200px;
     color: #fff;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
@@ -77,6 +78,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     margin: 13px 0 8px 0;
     padding: 0;
     -webkit-box-align: center;
@@ -90,6 +92,7 @@ body {
 
 .menu_popup {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -784,6 +787,7 @@ body {
     position: relative;
     width: 560px;
     min-height: 229px;
+    /*background-color: darkslateblue;*/
 }
 
 .hot-offer__bg {
@@ -1201,7 +1205,7 @@ body {
     align-items: center;
 }
 
-footer ul {
+.footer ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1467,7 +1471,7 @@ footer ul {
 .feedback__body input:not(:focus):hover,
 .feedback__body textarea:not(:focus):hover
 {
-    box-shadow: 0 0 0 2px rgba(154, 154, 154, 0.52);
+    box-shadow: inset 0 0 0 2px rgba(154, 154, 154, 0.52);
 }
 
 .feedback__close {
@@ -1585,7 +1589,6 @@ footer ul {
     height: 36px;
     border-radius: 100Px;
     background-color: rgba(255, 255, 255, 0.2);
-    z-index: 0;
 }
 
 .sort__form {
@@ -1791,11 +1794,15 @@ footer ul {
 }
 
 .sort input:not(.double-range) + label {
+    cursor: pointer;
+}
+
+.sort input:not(.double-range) + label::before {
     opacity: 0.8;
 }
 
-.sort input:hover + label,
-.sort input:focus + label
+.sort input:hover + label::before,
+.sort input:focus + label::before
 {
     opacity: 1;
 }
