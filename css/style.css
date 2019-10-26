@@ -795,7 +795,7 @@ body {
     min-height: 229px;
     border-radius: 15px;
     background-color: darkslateblue;
-    z-index: -4;
+    z-index: 1;
 }
 
 .hot-offer__bg {
@@ -1595,6 +1595,7 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
+    /*margin-bottom: 2px;*/
 }
 
 .sort::before {
@@ -1617,11 +1618,11 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
 .sort__form > fieldset {
-    margin: 0 14px 13px 0;
+    margin: 0 14px 12px 0;
     padding: 0;
     border: none;
 }
@@ -1655,6 +1656,9 @@ body {
 
 .sort__item-1 {
     width: 194px;
+}
+
+.sort__item-1_wrap {
     position: relative;
 }
 
@@ -1673,7 +1677,7 @@ body {
 .sort__arrow {
     font-size: 0;
     position: absolute;
-    top: 34px;
+    top: 13px;
     right: 26px;
 }
 
@@ -1908,7 +1912,7 @@ body {
 .nav-pages {
     -ms-flex-item-align: end;
     align-self: flex-end;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 
 .nav-pages__link {
