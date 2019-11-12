@@ -190,7 +190,7 @@ body {
 }
 /*================= drop menu======================*/
 .drop-menu {
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 42px;
     left:-6px;
@@ -201,6 +201,10 @@ body {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
     background-color: #f8f7f4;
     z-index: 5;
+}
+
+.drop-menu:focus-within {
+  opacity: 1;
 }
 
 .drop-menu li {
@@ -254,7 +258,7 @@ body {
 .menu__item-1:hover .drop-menu,
 .menu__sublist:focus + .drop-menu,
 .drop-menu:hover {
-    display: block;
+  opacity: 1;
 }
 /*======================================================*/
 .menu__item-1,
@@ -286,7 +290,7 @@ body {
 }
 
 .menu__search_input {
-    display: none;
+  opacity: 0;
     position: absolute;
     bottom:-87px;
     left:-298px;
@@ -297,6 +301,10 @@ body {
     -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
     background-color: #f8f7f4;
+}
+
+.menu__search_input:focus-within {
+  opacity: 1;
 }
 
 .menu__sublist:active,
@@ -311,7 +319,7 @@ body {
 .menu__search_input:hover,
 .menu__search_input:focus
 {
-    display: block;
+  opacity: 1;
 }
 
 .menu__item-search:hover .svg-black,
@@ -387,7 +395,7 @@ body {
 /*======== enter ====================*/
 
 .enter {
-    display: none;
+  opacity: 0;
     position: absolute;
     top:35px;
     left:-173px;
@@ -400,6 +408,10 @@ body {
     background-color: #f8f7f4;
     z-index: 10;
     color: #323232;
+}
+
+.enter:focus-within {
+  opacity: 1;
 }
 
 .enter input {
@@ -475,7 +487,7 @@ body {
 .menu__item-enter:hover .enter,
 .menu__enter:focus + .enter,
 .enter:hover {
-    display: block;
+  opacity: 1;
 }
 /*================== cart window =================*/
 .cart {
@@ -796,12 +808,14 @@ body {
     border-radius: 15px;
     background-color: darkslateblue;
     z-index: 1;
+    overflow: hidden;
 }
 
 .hot-offer__bg {
-    width: 100%;
     position: absolute;
-    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: -1;
 }
 
@@ -813,12 +827,12 @@ body {
 }
 
 .hot-offer__text {
-    height: 66px;
+    /*height: 66px;*/
     margin: 0 18px 0 18px;
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .hot-offer__oder {
