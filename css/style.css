@@ -285,6 +285,16 @@ body {
     position: relative;
 }
 
+.menu__search::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33px;
+  height: 60px;
+  z-index: 99;
+}
+
 .menu__search svg {
     margin-top: 4px;
 }
@@ -1988,7 +1998,6 @@ body {
     transform: rotate(135deg);
     left:8px;
 }
-
 
 @-webkit-keyframes bounce {
     0% {
